@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="agência especializada em marketing digital, criação de sites e aplicativos mobile.">
+    <meta name="keywords" content="marketing digital, marketing, sites, plicativos, aplicativos mobile">
+    <meta name="robots" content="index, foloow">
+    <meta name="author" content="patrick siotti">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>NodePrope - especializada em soluções digitais</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!--cabeçalho-->
+    <header>
+            <a href="index.html"><h1 id="logo">NodePrope - especializada em soluções digitais</h1></a>
+
+            <button id="btn-menu"><i class="fas fa-bars fa-2x"></i></button>
+
+            <nav id="menu">
+                <a id="btn-close"><i class="fas fa-times-circle fa-lg"></i></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+    </header>
+    <!--banner-->
+    <div id="banner">
+        <div id="title">
+            <h2>OUSE INOVAR!</h2>
+            <p>Criamos experiências e estabelecemos ações estratégicas que conectam marcas e consumidores.</p>
+        </div>
+        <div id="buttons">
+            <button id="button-cadastrar">Cadastrar <i class="fas fa-arrow-circle-right"></i></button>
+            <button id="button-sobre">Sobre <i class="fas fa-question-circle"></i></button>
+        </div>
+    </div>
+    <!--principal-->
+    <main>
+        <section>
+            <img src="img/criacoes.jpg" alt="Campanhas Publicitárias">
+            <div>
+                <a href="#">Campanhas Publicitárias</a>
+                <h3>Impressos, VTs e Jingles</h3>
+                <p>Se você está precisando de criação de algum material em específico, conte com a nossa equipe de profissionais. Eles farão toda campanha publicitária. VT, outdoor, folder, anúncio e muito mais pela sua empresa no mais alto padrão de qualidade.</p>
+            </div>
+        </section>
+        <section>
+            <img src="img/md.jpg" alt="Marketing Digital">
+            <div>
+                <a href="#">Marketing Digitals</a>
+                <h3>Administração de Redes Sociais</h3>
+                <p>Como agência de publicidade aplicamos estratégias nos meios digitais para que a seu negócio seja visto por milhões de usuários. O Brasil é o 5° país mais conectado do mundo. Por este motivo, o seu negócio não pode ficar fora do do mercado digital.</p>
+            </div>
+        </section>
+        <section>
+            <img src="img/cs.jpg" alt="Criação de Sites">
+            <div>
+                <a href="#">Criação de Sites</a>
+                <h3>Sites Administráveis</h3>
+                <p>Agora você pode administrar seu site quando e como quiser. E melhor ainda pois você pode pagar por este serviço, pois desenvolvemos de forma. Seu site atualizado, com seus últimos produtos, integração com redes sociais, agora é possível.</p>
+            </div>
+        </section>
+    </main>
+    <!--newslatter-->
+    <div id="newslatter">
+        <h2>Inscreva-se agora!</h2>
+        <p>Receba novidades, dicas e muito mais</p>
+        <form>
+            <input type="email" name="email" id="email" placeholder="seu email">
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <!--rodapé-->
+    <footer>
+        <div id="sociais">
+            <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fab fa-google fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="far fa-envelope fa-lg"></i></a>
+        </div>
+        <p>Copyright <i class="far fa-copyright fa-sm"></i> NodeProp 2016. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script>
+    $("#btn-menu").click(function(){
+        $("#menu").show()
+    })
+    $("#btn-close").click(function(){
+        $("#menu").hide()
+    })
+</script>
+</html>

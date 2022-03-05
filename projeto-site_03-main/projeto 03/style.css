@@ -1,0 +1,340 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/*
+    CSS NÃO OTIMIZADO
+*/
+
+/*===== RESET =====*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-color: rgb(240, 240, 240);
+}
+a {
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+
+/*GERAL*/
+
+/*cabeçalho*/
+header {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+}
+#logo {
+    width: 56px; 
+    height: 56px; 
+    float: left; 
+    background: url('img/logo-mobile.png') center center/56px no-repeat;
+    font-size: 0;
+}
+#btn-menu {
+    background-color: transparent;
+    float: right;
+    width: 56px; 
+    height: 56px;
+    text-align: center;
+    border-radius: 56px;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(to right, #ed4251, #f27a18);
+}
+
+/*menu*/
+#menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    display: none;
+}
+#btn-close{
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    margin: 5% 5%;
+    float: right
+}
+#menu ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+#menu li{
+    padding: 1.5%;
+}
+#menu li a{
+    font-size: 2em;
+    color: white;
+    padding: 1.5% 3%;
+}
+#menu li a:hover{
+    border: 1px solid #f27a18;
+}
+
+/*banner*/
+#banner {
+    background: url(img/bg.jpg), no-repeat fixed;
+    padding: 4% 4%;
+    text-align: center;
+    float: left;
+    width: 100%;
+    color: white;
+    box-sizing: border-box;
+}
+#title h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+#title p {
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+#buttons {
+    margin-top: 4%;
+    width: 100%;
+    font-size: 1.5em;
+}
+#buttons i {
+    float: right;
+}
+#button-cadastrar {
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+    text-align: left;
+    cursor: pointer;
+    background: white;
+    color: rgb(10, 0, 0);
+}
+#button-sobre {
+    margin-top: 3%;
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+    text-align: left;
+    cursor: pointer;
+    background: rgb(20, 0, 0);
+    color: white;
+}
+
+/*conteudo*/
+main {
+    padding: 5%;
+    float: left;
+}
+main section {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(20, 0, 0);
+    margin-bottom: 5%;
+    float: left;
+}
+section div {
+    padding: 7%;
+}
+section img {
+    border-radius: 10px 10px 0px 0px;
+}
+section a {
+    color: rgb(20, 0, 0);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+section h3 {
+    font-size: 1.2em;
+    margin-bottom: 5%;
+    margin-top: -1%;
+}
+section p {
+    line-height: 23px;
+}
+/*news latter*/
+#newslatter {
+    padding: 5%;
+    text-align: center;
+    float: left;
+    width: 100%;
+    background-color: rgb(20, 0, 0);
+    color: white;
+}
+#newslatter h2 {
+    font-weight: 700;
+    font-size: 2em;
+}
+#newslatter p {
+    margin-top: -5px;
+    margin-bottom: 5%;
+}
+#newslatter input {
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    padding: 7% 5%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+#newslatter button {
+    cursor: pointer;
+    width: 100%;
+    color: black;
+    background-color: white;
+    padding: 7% 5%;
+    border-radius: 10px;
+}
+/*rodapé*/
+footer {
+    background: linear-gradient(to right, #ed4251, #f27a18);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 5%;
+    float: left;
+}
+footer div i {
+    padding: 0 5% 5% 5%;
+    color: rgba(255, 255, 255, 0.665);
+}
+footer div i:hover{
+    color: white;
+}
+
+/*telas menores*/
+@media screen and (min-width: 375px) {
+    #newslatter input {
+        font-size: 1.5em;
+        padding: 5% 5%;
+    }
+    #newslatter button {
+        padding: 5% 5%;
+        font-size: 1.5em;
+    }
+    #logo {
+        width: 227px; 
+        background: url('img/logo.png') center center/227px no-repeat;
+    }
+}
+/*telas medias*/
+@media screen and (min-width: 650px) {
+    #banner {
+        text-align: left;
+    }
+    #title {
+        float: left;
+        width: 60%;
+        padding-right: 10%;
+    }
+    #buttons {
+        float: right;
+        width: 40%;
+        margin-top: 0;
+    }
+    main section {
+        max-width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
+    main:nth-child(2) {
+        margin-right: 0%;
+    }
+    #newslatter h2{
+        font-size: 3em;
+    }
+    #newslatter p {
+        font-size: 1.5em;
+        margin-bottom: 2%;
+    }
+    #newslatter input {
+        padding: 2% 2%;
+        width: 70%;
+        margin-bottom: 2%;
+    }
+    #newslatter button {
+        padding: 2% 2%;
+        width: 70%;
+    }
+    footer a{
+        font-size: 1.5rem;
+    }
+    footer p {
+        font-size: 1.2em;
+    }
+}
+/*telas maiores*/
+@media screen and (min-width: 1024px) {
+    main section {
+        width: 32%;
+        margin-bottom: 0;
+    }
+    main section:last-child {
+        margin-right: 0;
+    }
+    #newslatter input{
+        width: 40%;
+        border-radius: 10px;
+        padding: 1% 1%;
+    }
+    #newslatter button{
+        width: 20%;
+        padding: 1% 1%;
+    }
+    footer p {
+        font-size: 1.3em
+    }
+    #sociais {
+        margin-bottom: -3%;
+    }
+    footer {
+        padding: 2% 2%;
+    }
+    #btn-menu {
+        display: none;
+    }
+    #btn-close {
+        display: none;
+    }
+    #menu {
+        display: block !important;
+        background-color: transparent;
+        float: right;
+        position: static;
+        width: 70%;
+        height: 56px;
+        line-height: 56px;
+    }
+    #menu li {
+        float: right;
+        padding: 0;
+        margin-left: 3%;
+    }
+    #menu li a {
+        color: black;
+        font-size: 1.2em;
+        padding: 0;
+    }
+    #menu li a:hover{
+        border: none;
+        color: #f27a18;
+    }
+
+}

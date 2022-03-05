@@ -1,0 +1,189 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+a{
+    text-decoration: none;
+}
+body {
+    margin: 0px;
+
+}
+header, nav, main, footer, section{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+header {
+    background-color: rgb(0, 200, 200);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+header input {
+    height: 50px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    float: right;
+    margin-right: 0px;
+    padding-left: 20px;
+}
+header button {
+    float: right;
+    height: 50px;
+    width: 15%;
+    border: none;
+    background-color: rgb(0, 118, 118);
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+header button:active{
+    filter: brightness(300%)
+}
+header input:enabled{
+    border: none;
+}
+header form{
+    display: inline-block;
+    float: right;
+    width: 30%;
+}
+nav{
+    padding-left: calc(100px - 10px);
+    background-color: rgb(15, 15, 20);
+    font-family: sans-serif;
+}
+nav button{
+    padding:15px;
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin: none;
+}
+nav button:hover{
+    background-color: rgb(0, 200, 200);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    
+}
+nav button:not(:hover){
+    background-color: rgb(0, 0, 0, 0);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+nav #linkRedes{
+    float: right;
+    margin-top: 15px;
+}
+nav #linkRedes a {
+    margin-right: 10px;
+    color: white;
+}
+nav a.facebook i:hover{
+    color: rgb(0,100,184);
+}
+nav a.twitter i:hover{
+    color: rgb(30,160,242);
+}
+nav a.google i:hover{
+    color: rgb(234,67,53);
+}
+main {
+    margin-top: 20px;
+    padding-top: 0px;
+    text-align: justify;
+    font-family: OpenSansCondensed, sans-serif;
+    
+}
+section#sm1 {
+    float: left;
+    max-width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    
+}
+section#sm1 img {
+    float: left;
+    width: 50%;
+    border-radius: 5px;
+    margin: 5px 10px 0px 0px;
+}
+section#sm1 h1 {
+    margin-top: 0px;
+}
+section#sm1 p {
+    color: gray;
+}
+aside {
+    float: right;
+    width: 30%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    background-color: rgb(235, 235, 235);
+    overflow: auto;
+}
+aside iframe {
+    width: 100%;
+    height: 250px;
+}
+form#newsletter {
+    box-sizing: border-box;
+    background-color: rgb(15, 15, 20);
+    float: left;
+    width: 100%;
+    color: white;
+    padding: 50px 100px;
+}
+form#newsletter > * {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+form#newsletter > p {
+    margin: 0px 0px 10px 0px
+}
+form#newsletter > input[type="text"], form#newsletter > input[type="email"] {
+    border: white 1px solid;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 35%;
+    height: 40px;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+form#newsletter > input[type="submit"] {
+    color: black;
+    background-color: white;
+    border: white 1px solid;
+    width: 20%;
+    min-width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+form#newsletter > input[type="submit"]:active {
+    border: white 1px solid;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+footer {
+    color: white;
+    background-color: rgb(0, 200, 200);
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px 100px 10px 100px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
